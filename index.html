@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="icon" type="image/png" sizes="32x32" href="serieA.png">      <!-- seu PNG -->
-  <link rel="icon" type="image/png" sizes="16x16" href="serieA.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="serieA.png">
-  <link rel="shortcut icon" href="serieA.png">                            <!-- .ico para compatibilidade -->
-  <meta name="theme-color" content="#071024">
+ <link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="serieA.png">
+<meta name="theme-color" content="#0f1724">
+<meta name="apple-mobile-web-app-capable" content="yes">
+
   <title>Serie A</title>
 
   <style>
@@ -133,7 +133,28 @@
 
     <footer></footer>
   </div>
+<script{
+  "name": "Serie A",
+  "short_name": "Serie A",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#0f1724",
+  "theme_color": "#0f1724",
 
+  "icons": [
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
+</script>
   <!-- jsPDF -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 
